@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left">
+        <img class="button_icon" src="left.png" alt="">
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide">
+            <img class="carousel_img" src="lilies.jpg" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel_img" src="lilies.jpg" alt="">
+          </li>
+          <li class="carousel__slide">
+            <img class="carousel_img"src="lilies.jpg" alt="">
+          </li>
+        </ul>
+      </div> <!-- carousel track container-->
+      <button class="carousel__button carousel__button--right">
+        <img class="button_icon" src="right.png" alt="">
+      </button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current__slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+
+
+
+    </div> <!--end carousel -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
