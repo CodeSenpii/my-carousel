@@ -1,7 +1,13 @@
+html,body{
+  background: lightgrey;
+  width: 100%;
+  height:100%;
+  text-align: center;
+}
 .carousel{
   position: relative;
   height:600px;
-  width:90%;
+  width:100%;
   margin: 0 auto;
 }
 
@@ -16,7 +22,9 @@
   background: lightgreen;
   /* padding: 10px; */
   height: 100%;
+  width: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 /* each individual sile */
@@ -24,6 +32,8 @@
   padding:0;
   margin:0;
   list-style:none;
+  position: relative;
+  height: 100%;
 }
 
 /* carousel item */
@@ -31,6 +41,7 @@
   position: absolute;
   top:0;
   bottom:0;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__button{
@@ -44,10 +55,11 @@
 }
 
 .carousel__button--left{
-  left:-40px;
+  left:0px;
+  z-index: 1;
 }
 .carousel__button--right{
-  right:-40px;
+  right:0px;
 }
 .button_icon{
   width:20px;
@@ -70,7 +82,29 @@
   margin: 0 6px;
   cursor: pointer;
 }
-.current__slide{
+.current-slide{
   background: darkgrey;
-  background:rgba(0,0,0,0.75)
+  background:rgba(0,0,0,0.75);
+}
+.content__story{
+  height:600px;
+  width: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.p1{
+  background: blue;
+  position: relative;
+
+}
+.p2{
+  background: red;
+}
+.p3{
+  background:brown;
+}
+p{
+  margin:0;
+  text-align: center;
+
 }
